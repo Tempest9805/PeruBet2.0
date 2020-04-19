@@ -4,21 +4,21 @@
 @media
 (min-device-width: 800px)
 and (max-device-width: 1280px) {
-	margin-bottom: 3rem;
+	display: none;
 }
 
 /* Portrait */
 @media
 (max-device-width: 800px)
 and (orientation: portrait) {
-	margin-bottom: 3rem;
+	display: none;
 }
 
 /* Landscape */
 @media
 (max-device-width: 1280px)
 and (orientation: landscape) {
-	margin-bottom: 3rem;
+	display: none;
 }
 
 /* ----------- Galaxy Tab S ----------- */
@@ -28,7 +28,7 @@ and (orientation: landscape) {
 (min-device-width: 800px)
 and (max-device-width: 1280px)
 and (-webkit-min-device-pixel-ratio: 2) {
-	margin-bottom: 3rem;
+	display: none;
 }
 
 /* Portrait */
@@ -36,7 +36,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 (max-device-width: 800px)
 and (orientation: portrait)
 and (-webkit-min-device-pixel-ratio: 2) {
-	margin-bottom: 3rem;
+	display: none;
 }
 
 /* Landscape */
@@ -44,5 +44,5 @@ and (-webkit-min-device-pixel-ratio: 2) {
 (max-device-width: 1280px)
 and (orientation: landscape)
 and (-webkit-min-device-pixel-ratio: 2) {
-	margin-bottom: 3rem;
+	display: none;
 }

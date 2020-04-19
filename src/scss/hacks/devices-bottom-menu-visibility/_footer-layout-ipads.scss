@@ -5,7 +5,7 @@
 and (min-device-width: 768px)
 and (max-device-width: 1024px)
 and (-webkit-min-device-pixel-ratio: 1) {
-	margin-bottom: 3rem;
+	display: none;
 }
 
 /* Portrait */
@@ -14,7 +14,7 @@ and (min-device-width: 768px)
 and (max-device-width: 1024px)
 and (orientation: portrait)
 and (-webkit-min-device-pixel-ratio: 1) {
-	margin-bottom: 3rem;
+	display: none;
 }
 
 /* Landscape */
@@ -23,7 +23,7 @@ and (min-device-width: 768px)
 and (max-device-width: 1024px)
 and (orientation: landscape)
 and (-webkit-min-device-pixel-ratio: 1) {
-	margin-bottom: 3rem;
+	display: none;
 }
 
 /* ----------- iPad 3, 4 and Pro 9.7" ----------- */
@@ -33,7 +33,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 and (min-device-width: 768px)
 and (max-device-width: 1024px)
 and (-webkit-min-device-pixel-ratio: 2) {
-	margin-bottom: 3rem;
+	display: none;
 }
 
 /* Portrait */
@@ -42,7 +42,7 @@ and (min-device-width: 768px)
 and (max-device-width: 1024px)
 and (orientation: portrait)
 and (-webkit-min-device-pixel-ratio: 2) {
-	margin-bottom: 3rem;
+	display: none;
 }
 
 /* Landscape */
@@ -51,7 +51,7 @@ and (min-device-width: 768px)
 and (max-device-width: 1024px)
 and (orientation: landscape)
 and (-webkit-min-device-pixel-ratio: 2) {
-	margin-bottom: 3rem;
+	display: none;
 }
 
 /* ----------- iPad Pro 10.5" ----------- */
@@ -61,7 +61,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 and (min-device-width: 834px)
 and (max-device-width: 1112px)
 and (-webkit-min-device-pixel-ratio: 2) {
-	margin-bottom: 3rem;
+	display: none;
 }
 
 /* Portrait */
@@ -72,7 +72,7 @@ and (min-device-width: 834px)
 and (max-device-width: 834px)
 and (orientation: portrait)
 and (-webkit-min-device-pixel-ratio: 2) {
-	margin-bottom: 3rem;
+	display: none;
 }
 
 /* Landscape */
@@ -83,7 +83,7 @@ and (min-device-width: 1112px)
 and (max-device-width: 1112px)
 and (orientation: landscape)
 and (-webkit-min-device-pixel-ratio: 2) {
-	margin-bottom: 3rem;
+	display: none;
 }
 
 /* ----------- iPad Pro 12.9" ----------- */
@@ -93,7 +93,7 @@ and (-webkit-min-device-pixel-ratio: 2) {
 and (min-device-width: 1024px)
 and (max-device-width: 1366px)
 and (-webkit-min-device-pixel-ratio: 2) {
-	margin-bottom: 3rem;
+	display: none;
 }
 
 /* Portrait */
@@ -104,7 +104,7 @@ and (min-device-width: 1024px)
 and (max-device-width: 1024px)
 and (orientation: portrait)
 and (-webkit-min-device-pixel-ratio: 2) {
-	margin-bottom: 3rem;
+	display: none;
 }
 
 /* Landscape */
@@ -115,5 +115,5 @@ and (min-device-width: 1366px)
 and (max-device-width: 1366px)
 and (orientation: landscape)
 and (-webkit-min-device-pixel-ratio: 2) {
-	margin-bottom: 3rem;
+	display: none;
 }
