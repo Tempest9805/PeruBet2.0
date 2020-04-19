@@ -7,41 +7,12 @@ append config
 block main-header
 	+banner(
 		"https://images.pexels.com/photos/265614/pexels-photo-265614.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb",
-		'Home',
-		'Description',
-		true,
-		''
+		'Page 1',
+		'',
+		false,
+		false
 	)
 block main-container
-	include ../components/json-data
-	include ../components/ed-items
-	include ../components/rwd-images
-	include ../components/tables
-	include ../components/img-gallery
-	//include ../components/cards
-	//include ../components/play-list
-	//include ../components/foro
-	//include ../components/method-payment
-	//include ../components/colores
-	//include ../components/pricing-table
-	//include ../components/video
-	//include ../components/listas
-	//include ../components/forms
-	//include ../components/landing-page
-	//include ../components/course
-	//include ../components/cronograma
-	//include ../components/expositores
-	//include ../components/components
-	//include ../components/markdown
-	include ../components/tabs
-	include ../components/modal
-
+	h1 Page 1
 block main-footer
 block scripts
-	script.
-		document.getElementById('modal-button').addEventListener('click', () => {
-			edModal(`<h2>Bienvenidos a EDui</h2>`)
-		})
-
-
-
