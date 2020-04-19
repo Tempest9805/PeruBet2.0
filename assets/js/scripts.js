@@ -3,7 +3,11 @@
 
 var _topNav = require('./modules/topNav');
 
+var _swDetecter = require('./modules/swDetecter');
+
 (function () {
+
+	(0, _swDetecter.swDetecter)();
 	(0, _topNav.topNav)();
 	if (document.body.classList.contains('home')) {
 		// functions here
@@ -16,7 +20,23 @@ var _topNav = require('./modules/topNav');
 	}
 })();
 
-},{"./modules/topNav":2}],2:[function(require,module,exports){
+},{"./modules/swDetecter":2,"./modules/topNav":3}],2:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+	value: true
+});
+var swDetecter = exports.swDetecter = function swDetecter() {
+	if ('serviceWorker' in navigator) {
+		navigator.serviceWorker.register('./sw.js').then(function (reg) {
+			return console.log('Registro de SW exitoso', reg);
+		}).catch(function (err) {
+			return console.warn('Error al tratar de registrar el sw', err);
+		});
+	}
+};
+
+},{}],3:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {

@@ -1,6 +1,6 @@
 {
-	"name": "#myPwa",
-	"short_name": "#myPwa",
+	"name": "myPwa",
+	"short_name": "myPwa",
 	"description": "Bienvenid@s a #myPwa",
 	"background_color": "#2B2B2B",
 	"theme_color": "#007BDF",
@@ -8,7 +8,7 @@
 	"display": "standalone",
 	"start_url": "./?utm_source=web_app_manifest",
 	"scope": "./",
-	"lang": "es-MX",
+	"lang": "en",
 	"icons": [
 		{
 			"src": "./assets/img/icon_1024.png",
