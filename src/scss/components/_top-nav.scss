@@ -93,12 +93,10 @@
 		@include from(l){
 			display: none;
 		}
-		@media only screen
-		and (min-device-width: 0px)
-		and (max-device-width: 960px)
-		and (-webkit-min-device-pixel-ratio: 2) {
-			display: none;
-		}
+		@import "../hacks/devices-bottom-menu-visibility/footer-layout-galaxy-tables";
+		@import "../hacks/devices-bottom-menu-visibility/footer-layout-gallaxy-phones";
+		@import "../hacks/devices-bottom-menu-visibility/footer-layout-google-pixel";
+		@import "../hacks/devices-bottom-menu-visibility/footer-layout-ipads";
+		@import "../hacks/devices-bottom-menu-visibility/footer-layout-iphones";
 	}
-
 }
