@@ -2,7 +2,7 @@ mixin banner(img, title, description, boton, clase)
 	.main-banner.img-container.diagonal(class=`main-banner--`+ `${clase}`)
 		div(class='ed-grid lg-grid-6')
 			div(class='lg-cols-4 lg-x-2')
-				img(src=img class='main-banner__img')
+				img(src=img class='main-banner__img' alt='main image banner')
 				div(class='main-banner__data s-center')
 					p(class='s-mb-0 t2')= title
 					if (description)
