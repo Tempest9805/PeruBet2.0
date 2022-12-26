@@ -14,7 +14,7 @@ strong {
 }
 
 body {
-	margin         	: var(--header-height) 0 0 0;
+	// margin         	: var(--header-height) 0 0 0;
 	min-height     	: calc(100vh - var(--header-height));
 	background 		: var(--body-bg);
 	display        	: flex;
@@ -24,10 +24,11 @@ body {
 .main-header{}
 .main-container{}
 .main-footer {
-	background 		: $color-first;
+	background 		: $darkColor;
 	color      		: #FFF;
-	padding    		: 2rem 0;
+	padding    		: 1rem 0;
 	font-size  		: fontSize(small);
-	margin-top 		: auto;
+	// margin-top 		: auto;
+	
 	@import "footer-layout-marging";
 }

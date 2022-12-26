@@ -18,7 +18,7 @@ html(lang='en' prefix='og: http://ogp.me/ns#', class='no-js')
 		include utilis/bodyElements/upBrowser
 		//here start the Main Header
 		header(class='main-header')
-			include ../components/top-nav
+			include ../components/top-nav.html
 			block main-header
 		//here ends the Main Header
 		//here start the Main Container
@@ -27,10 +27,8 @@ html(lang='en' prefix='og: http://ogp.me/ns#', class='no-js')
 		//here ends the Main Container
 		//here start the Main Footer
 		footer(class='main-footer')
-			div(class='ed-container')
-				div(class='ed-item')
-					span kikeestrada PWA
-			include ../components/bottom-nav
+			include ../components/footer.html
+			include ../components/bottom-nav.html
 			block main-footer
 		//here ends the Main Footer
 		include utilis/bodyElements/cdnLibraries

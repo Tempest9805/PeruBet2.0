@@ -8,13 +8,13 @@
 	//native color vars
 	--color-first      	: #007BDF;
 	--color-second     	: #00CBFF;
-	--color-third      	: #FF3C32;
+	--color-red     	: #DA0116;
 	--color-accent     	: #FBA905;
 	--color-dark       	: #282D31;
 	--color-border     	: #DFE0E0;
 	--color-light      	: #EAEAEA;
 	--color-text-white	: #FFFFFF;
-	--color-text-gray	: #53575A;
+	--color-text-gray	: #131313;
 	--color-body-bg 	: #F6F6F6;
 
 	//Native z-index vars
@@ -31,7 +31,7 @@
 // Sass Color Vars
 $color-first 			: var(--color-first			);
 $color-second 			: var(--color-second		);
-$color-third 			: var(--color-third			);
+$color-red 			: var(--color-red			);
 $color-accent 			: var(--color-accent		);
 $color-dark 			: var(--color-dark			);
 $color-border 			: var(--color-border		);
@@ -56,9 +56,10 @@ $images-path: 'https://ux.ed.team/img';
 // Colors
 $firstColor  : #007BDF;
 $secondColor : #00CBFF;
-$thirdColor  : #FF3C32;
+$redColor  : #FF3C32;
 $accentColor : #FBA905;
-$darkColor   : #171A1C;
+$darkColor   : #000000;
+$grayColor 	 : #979797;
 
 // Complementary colors:
 $borderColor : #DFE0E0;

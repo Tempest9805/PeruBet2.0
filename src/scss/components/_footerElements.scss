@@ -1,0 +1,52 @@
+.footer{
+    &__upperFooterContainer{
+        display: flex;
+        justify-content: center;
+    }
+    &__upperFooter{
+        position: relative;
+        width: 200px;
+        height: 100px;
+        top: -24px;
+    }
+    &_ul{
+        font-size: 14px;
+        font-weight: 700;
+    }
+    &__li{
+        list-style: none ;
+        font-weight: 200;
+        color: rgb(255, 255, 255);
+        display: flex;
+        align-items: center;
+        line-height: 1.8rem;
+    }
+    &__social{
+        width: 15px;
+        height: 15px;
+        margin-right: .5rem;
+        filter: invert(1);
+    }
+    &__finalImg{
+        position: relative;
+        top: 20px;
+        width: 40px;
+        height: 40px;
+    }
+    .downFooter{
+        display: flex;
+        width: 40px;
+        height: 40px;
+    }
+    &__downFooterContainer{
+        text-align: center;
+        background-color: var(--color-text-gray);
+        padding: 1.5rem 0;
+    }
+    &__downFooterSocial{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        padding: 1.3rem 0;
+    }
+}

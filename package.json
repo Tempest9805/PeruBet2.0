@@ -1,9 +1,9 @@
 {
-	"name": "my-pwa",
+	"name": "PeruBet2.0",
 	"version": "1.0.0",
 	"description": "Simple scafolding for statics web projects",
 	"main": "gulpfile.babel.js",
-	"homepage": "https://kikeestrada.github.io/my-pwa/",
+	"homepage": "https://Tempest9805.github.io/PeruBet2.0/",
 	"scripts": {
 		"start": "gulp",
 		"scripts": "gulp scripts",
@@ -11,7 +11,7 @@
 		"sitemap": "gulp sitemap",
 		"deploy": "gh-pages -d public"
 	},
-	"author": "Enrique Estrada",
+	"author": "Daniel Chaves",
 	"license": "GPL-2.0",
 	"dependencies": {
 		"normalize.css": "^8.0.1",

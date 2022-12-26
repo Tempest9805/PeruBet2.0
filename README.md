@@ -12,5 +12,5 @@ Instructions:
 * ```gulp build``` before deployment
 * ```npm run deploy``` to publish the site in gh pages
 
-## gh-pages link: https://kikeestrada.github.io/my-pwa/
+## gh-pages link: https://Tempest9805.github.io/PeruBet2.0/
 
