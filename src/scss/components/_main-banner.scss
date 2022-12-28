@@ -1,39 +1,24 @@
-.main-banner {
-	//mobile-first settings
-	color       		: $color-text-white;
-	background  		: $color-first;
-	--padding   		: 2rem;
-
-	&.main-banner--secondary { background : $color-second	}
-	&.main-banner--tertiary  { background : $color-red 	}
-	&.main-banner--accent    { background : $color-accent 	}
-	&.main-banner--dark      { background : $color-dark   	}
-	&.diagonal {
-		clip-path 		: polygon(0 0, 100% 0, 100% 100%, 0 84%);
+.main-banner{
+	
+	z-index: -1;
+	background : url("/assets/img/slider/background-banner.jpg") center / cover;
+	position   : relative;
+	min-height: 100vh; // Solo para maquetacion
+	display: grid;     // Solo para maquetacion
+	align-items: center;
+	&__Texto1{
+		margin   : auto;
+		color    : #fff;
+		position : relative;
 	}
-
-	// Separación del contenido
-	padding-top    		: var(--padding);
-	padding-bottom 		: calc(var(--padding) * 1.25);
-
-	@include from(l) {
-	--padding 			: 4rem;
-	}
-
-	&__button {
-		border: 1px solid $color-border;
-		&:hover{
-			background: $color-accent;
-			text-decoration: none;
-		}
-	}
-
-	.main-banner__img {
-		opacity 			: .3;
-	}
-
-	.main-banner__data {
-		position 			: relative;
-	}
+	
 }
-
+.main-banner::before {
+	content    : "";
+	background : var(--color-gradient); // remplazalo por el color que desees;
+	display    : block;
+	position   : absolute;
+	width      : 100%;
+	height     : 100%;
+	opacity    : 0.4; // aquí está la magia
+}

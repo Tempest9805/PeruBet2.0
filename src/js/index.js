@@ -1,9 +1,9 @@
-import {topNav} from './modules/topNav';
-import {swDetecter} from './modules/swDetecter';
+import {middleNav} from './modules/topNav';
+// import {swDetecter} from './modules/swDetSecter';
 (()=>{
 
-	swDetecter();
-	topNav();
+	// swDetecter();
+	middleNav();
 	if (document.body.classList.contains('home')) {
 		// functions here
 	}else if (document.body.classList.contains('page2')) {

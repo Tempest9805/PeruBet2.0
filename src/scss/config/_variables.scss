@@ -2,20 +2,20 @@
 :root {
   --header-height 		: 3rem;
   @include from(l) {
-    --header-height 	: 4rem;
+    --header-height 	: 6rem;
   }
 
 	//native color vars
 	--color-first      	: #007BDF;
-	--color-second     	: #00CBFF;
-	--color-red     	: #DA0116;
-	--color-accent     	: #FBA905;
-	--color-dark       	: #282D31;
+	--color-second     	: #009D3D;
+	--color-red     	: #DA0000;
+	--color-accent     	: #00742D;
+	--color-dark       	: #2D2D2D;
 	--color-border     	: #DFE0E0;
-	--color-light      	: #EAEAEA;
+	--color-gradient    : linear-gradient(0deg, rgba(221,46,40,1) 0%, rgba(0,0,0,1) 100%);;
 	--color-text-white	: #FFFFFF;
 	--color-text-gray	: #131313;
-	--color-body-bg 	: #F6F6F6;
+	--color-body-bg 	: #FFF5E6;
 
 	//Native z-index vars
 	--z-back    		: -10;
@@ -35,7 +35,7 @@ $color-red 			: var(--color-red			);
 $color-accent 			: var(--color-accent		);
 $color-dark 			: var(--color-dark			);
 $color-border 			: var(--color-border		);
-$color-light 			: var(--color-light			);
+$color-gradient 			: var(--color-gradient			);
 $color-text-white 		: var(--color-text-white	);
 $color-text-gray 		: var(--color-text-gray		);
 $color-body-bg 			: var(--color-body-bg		);
@@ -56,7 +56,7 @@ $images-path: 'https://ux.ed.team/img';
 // Colors
 $firstColor  : #007BDF;
 $secondColor : #00CBFF;
-$redColor  : #FF3C32;
+$redColor    : #DA0000;
 $accentColor : #FBA905;
 $darkColor   : #000000;
 $grayColor 	 : #979797;

@@ -1,7 +1,9 @@
 .top-nav {
+	display: flex;
+	justify-content: space-around;
+	background: url("/assets/img/slider/background-banner.jpg") center / cover;
+	border-bottom: 1px solid var(--color-red);
 	
-	
-
 	&__container {
 		display: flex;
 		align-items: center;
@@ -26,14 +28,14 @@
 		width: auto;
 		display: block;
 		min-width: 101px;
-		min-height: 82.72px;
+		min-height: 20px;
 		@include from(m) {
 			height: 2rem;
-			width: 200px;
+			width: 160px;
 		}
 		@include fromTo(s, m) {
-			width: 80px;
-			height: 50px;
+			width: 60px;
+			height: 20px;
 		}
 	}
 	
@@ -46,37 +48,34 @@
 	margin: 0 0.5rem;
 	font-weight: bold;
 	font-size: 14px;
-	@include fromTo(s, m) {
-		display: none;
-	}
+	
 	@include fromTo(s, l) {
 		font-size: 10px;
 		padding: 0.1rem 0.1rem;
 	}
 
 	&__login {
-		background-color: var(--rojo);
-		border: 1px solid var(--rojo);
-		color: var(--second-color);
+		background-color: var(--color-red);
+		border: 1px solid var(--color-red);
+		color: var(--color-text-white);
 		padding: 0.5rem 1rem;
 		@include fromTo(s, l) {
 			padding: 0.5rem 0.3rem;
 		}
 	}
 	&__register {
-		background-color: var(--second-color);
-		color: var(--color-first);
-		border: 1px solid var(--color-first);
+		background-color: transparent;
+		color: var(--color-text-white);
+		border: 1px solid var(--color-text-white);
 		display: flex;
 		align-items: center;
-		@include fromTo(s, m) {
-			display: none;
-		}
+		
 	}
 	&__user {
 		margin-left: 0.5em;
 		width: 18px;
 		height: 18px;
+		;
 		@include fromTo(s, l) {
 			width: 10px;
 			height: 10px;
@@ -84,7 +83,7 @@
 	}
 	&__login:hover {
 		cursor: pointer;
-		background: var(--gray-color);
+		
 	}
 	&__register:hover {
 		cursor: pointer;

@@ -22,7 +22,9 @@ body {
 }
 
 .main-header{}
-.main-container{}
+.main-container{
+	background: url("/assets/img/background.jpg") center / cover;
+}
 .main-footer {
 	background 		: $darkColor;
 	color      		: #FFF;
