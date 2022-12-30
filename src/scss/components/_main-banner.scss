@@ -1,24 +1,110 @@
 .main-banner{
-	
-	z-index: -1;
+	font-family: var(--heebo);
 	background : url("/assets/img/slider/background-banner.jpg") center / cover;
 	position   : relative;
 	min-height: 100vh; // Solo para maquetacion
 	display: grid;     // Solo para maquetacion
 	align-items: center;
+	&__Container{
+		position: relative;
+		z-index: 1;
+		@include fromTo(s, l) {
+			text-align: center;
+			padding-left: 2rem;
+		}
+		@include from(l) {
+			padding-left: 2rem;
+		}
+	}
+
 	&__Texto1{
+		top: 20%;
+		margin   : auto;
+		color    : $grayColor;
+		position : relative;
+		
+		font-size: 30px;
+		font-weight: bold;
+	}
+	&__Texto2{
+		top: 13%;
 		margin   : auto;
 		color    : #fff;
 		position : relative;
+
+		font-size: 90px;
+		.colorFirst{
+			color: var(--color-red);
+		}
 	}
+	&__Texto3{
+		top: 5%;
+		margin   : auto;
+		color    : $grayColor;
+		position : relative;
+		font-size: 30px;
+	}
+
 	
-}
-.main-banner::before {
-	content    : "";
-	background : var(--color-gradient); // remplazalo por el color que desees;
-	display    : block;
-	position   : absolute;
-	width      : 100%;
-	height     : 100%;
-	opacity    : 0.4; // aquí está la magia
+	&__Texto4{
+		margin-top: 1rem;
+		color    : #fff;	
+		font-size: 12px;
+	}
+	&__18{
+		margin-left: 1rem;
+		color: #fff;
+		width: 2rem;
+		display: inline-block;
+		position: relative;
+		top: 8px;
+	}
+	&__ContainerButton{
+		position : relative;
+		top: 11%;
+		@include fromTo(s, m) {
+			top: 76%;
+		}
+		@include fromTo(m, l) {
+			top: 107%;
+		}
+	}
+	&__TextoConBoton{
+		border-radius: 10px;
+		margin: 2rem 0.5rem;
+		font-weight: bold;
+		font-size: 27px;
+		background-color: var(--color-red);
+		
+		color: var(--color-text-white);
+		padding: 0.5rem 3rem;
+		cursor: pointer;
+	}
+	&__TextoConBoton:hover{
+		text-decoration: none;
+		background-color: var(--color-second);
+	}
+
+	&__bannerImgContainer{
+		display: flex;
+		justify-content: center;
+		position: relative;
+		@include fromTo(s, m) {
+			top: -42%;
+		}
+		@include fromTo(m, l) {
+			top: -30%;
+		}
+	}
+	&__bannerImg{
+		@include fromTo(s, m) {
+			height: 20rem;
+			width: 20rem;
+		}
+		@include fromTo(m, l) {
+			height: 28rem;
+			width: 28rem;
+		}
+	}
+
 }
