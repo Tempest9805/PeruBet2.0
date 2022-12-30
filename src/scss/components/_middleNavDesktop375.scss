@@ -2,12 +2,14 @@
 
 	background    	: var(--color-body-bg );
 	width         	: 100%;
-	height			: 5rem;
-	
+	height			: 13rem;
     position: relative;
-    top: -1px;
+    top: -3rem;
     
-    @include from(m){
+	@include from(m){
+        height	: 19rem;
+    }
+    @include from(l){
         height	: 9rem;
     }
 	.titulos_middleNav{
@@ -15,7 +17,7 @@
 	}
 	&__container{
 		position: relative;
-        top: -10rem;
+        
 	}
 	&__align{
 		display: flex;
@@ -56,6 +58,9 @@
         @include from(m){
             margin-left: 2em;
         }
+		@include from(l){
+            margin-left: 1em;
+        }
 	}
     
 	
@@ -74,6 +79,10 @@
 	.logosMiddleNav{
 		height: 7rem;
 		width: 7rem;
+		position   : relative;
+	}
+	.logosMiddleNav:hover  {
+    	filter: grayscale(100%) brightness(74%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(1.9);
 	}
     @include fromTo(s, m){
         .logosMiddleNav{
@@ -81,9 +90,18 @@
             width: 4rem;
         }
     }
-	@include from(l){
-		display: none;
-    }
+	.android{
+		@include from(l){
+			display: none;
+		}
+	}
+
+		@import "../hacks/devices-bottom-menu-visibility/footer-layout-galaxy-tables";
+		@import "../hacks/devices-bottom-menu-visibility/footer-layout-gallaxy-phones";
+		@import "../hacks/devices-bottom-menu-visibility/footer-layout-google-pixel";
+		@import "../hacks/devices-bottom-menu-visibility/footer-layout-ipads";
+		@import "../hacks/devices-bottom-menu-visibility/footer-layout-iphones";
+	
 }
 
 

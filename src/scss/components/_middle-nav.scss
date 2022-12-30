@@ -1,18 +1,18 @@
 .middlenav{
-	background    	: var(--color-body-bg );
-	width         	: 100%;
-	display 		: flex;
-	justify-content : center;
-	color			: rgb(0, 0, 0);
-	// position		: relative;
-	height			: 9rem;
-	z-index: 1;
+	
+	// background    	: var(--color-body-bg );
+	// width         	: 100%;
+	// display 		: flex;
+	// justify-content : center;
+	// color			: rgb(0, 0, 0);
+	// // position		: relative;
+	// height			: 9rem;
+	// z-index: 1;
 	.titulos_middleNav{
 		@include fromTo(s,l){
 			position: relative;
     		left: -39px;
 			color: aliceblue;
-			
 		}
 	}
 	&__container{
@@ -153,6 +153,9 @@
 		@include from(l){
 			display: none;
 		}
+	}
+	@include from(l){
+		display: none;
 	}
 }
 
