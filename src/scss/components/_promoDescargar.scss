@@ -1,0 +1,52 @@
+.promoDescargar{
+    &__container{
+        background: var(--color-gradient );
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        opacity: 0.8;
+        border-radius: 15px;
+        max-width: 600px;
+    }
+    &__container:hover{
+        filter: grayscale(100%) brightness(51%) sepia(100%) hue-rotate(-50deg) saturate(600%) contrast(0.9);
+        opacity: 1;
+        border: 1px solid var(--color-red);
+        
+    }
+    &__textContainer{
+        font-weight: bold;
+        padding-left: 1rem;
+    }
+    &__texto1{
+        font-size: 25px;
+        color: white;
+        @include fromTo(m, l){
+            font-size: 20px;
+        }
+    }
+    &__texto2{
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    &__images{
+        width: 12rem;
+        height: 12rem;
+        transition: transform .2s; /* Animation */
+        @include fromTo(m, l){
+            width: 8rem;
+            height: 8rem;
+        }
+    }
+    
+    &__images:hover{
+        transform: scale(1.2);
+        position: relative;
+        top: -1rem;
+    }
+    // @include fromTo(s, m){
+    //     display: none;
+    // }
+    
+}

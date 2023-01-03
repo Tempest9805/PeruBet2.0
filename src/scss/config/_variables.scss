@@ -12,7 +12,7 @@
 	--color-accent     	: #00742D;
 	--color-dark       	: #2D2D2D;
 	--color-border     	: #DFE0E0;
-	--color-gradient    : linear-gradient(0deg, rgba(221,46,40,1) 0%, rgba(0,0,0,1) 100%);;
+	--color-gradient    : linear-gradient(302deg, rgba(255,0,0,0.8239670868347339) 0%, rgba(123,2,2,1) 0%, rgba(21,4,4,1) 55%);
 	--color-text-white	: #FFFFFF;
 	--color-text-gray	: #131313;
 	--color-body-bg 	: #FFF5E6;
@@ -31,11 +31,11 @@
 // Sass Color Vars
 $color-first 			: var(--color-first			);
 $color-second 			: var(--color-second		);
-$color-red 			: var(--color-red			);
+$color-red 				: var(--color-red			);
 $color-accent 			: var(--color-accent		);
 $color-dark 			: var(--color-dark			);
 $color-border 			: var(--color-border		);
-$color-gradient 			: var(--color-gradient			);
+$color-gradient 		: var(--color-gradient		);
 $color-text-white 		: var(--color-text-white	);
 $color-text-gray 		: var(--color-text-gray		);
 $color-body-bg 			: var(--color-body-bg		);

@@ -22,19 +22,27 @@
 		margin   : auto;
 		color    : $grayColor;
 		position : relative;
-		
-		font-size: 30px;
+		font-size: 20px;
 		font-weight: bold;
+		@include from(m) {
+			font-size: 30px;
+		}
 	}
 	&__Texto2{
 		top: 13%;
 		margin   : auto;
 		color    : #fff;
 		position : relative;
-
-		font-size: 90px;
+		font-size: 55px;
+		
 		.colorFirst{
 			color: var(--color-red);
+		}
+		@include fromTo(ss, m) {
+			font-size: 67px;
+		}
+		@include from(m) {
+			font-size: 90px;
 		}
 	}
 	&__Texto3{
@@ -42,7 +50,10 @@
 		margin   : auto;
 		color    : $grayColor;
 		position : relative;
-		font-size: 30px;
+		font-size: 20px;
+		@include from(m) {
+			font-size: 30px;
+		}
 	}
 
 	
@@ -61,12 +72,19 @@
 	}
 	&__ContainerButton{
 		position : relative;
-		top: 11%;
-		@include fromTo(s, m) {
-			top: 76%;
+		top: 60%;
+	
+		@include fromTo(ss, sm) {
+			top: 87%;
 		}
-		@include fromTo(m, l) {
-			top: 107%;
+		@include fromTo(sm, m) {
+			top: 87%;
+		}
+		@include from(m) {
+			top: 106%;
+		}
+		@include from(l) {
+			top: 9%;
 		}
 	}
 	&__TextoConBoton{
@@ -77,8 +95,11 @@
 		background-color: var(--color-red);
 		
 		color: var(--color-text-white);
-		padding: 0.5rem 3rem;
+		padding: 0.5rem 1rem;
 		cursor: pointer;
+		@include from(m) {
+			padding: 0.5rem 3rem;
+		}
 	}
 	&__TextoConBoton:hover{
 		text-decoration: none;

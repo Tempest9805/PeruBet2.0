@@ -10,6 +10,11 @@
 
 // MODULOS (SMACSS) O COMPONENTES (ITCSS)
 @import "components/components";
+@import "components/tns-sliderGlobal";
+@import "components/tns-carouselApuestas";
+@import "components/tns-carouselMetodosPago";
+
+
 
 // Theme (colors and fonts)
 @import "theme/theme";
