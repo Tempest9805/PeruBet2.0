@@ -7,7 +7,7 @@
 }
 .tns-carousell{
 	& > div{
-		background        : url("/assets/img/Home-page/seccion-apuestas/background.png") center / cover;
+		background        : url("../../assets/img/Home-page/seccion-apuestas/background.png") center / cover;
 		border-radius     : 30px;
 		
 		@include from(l){
